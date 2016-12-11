@@ -17,3 +17,27 @@ class ShoppingListItem {
    }
 
 }
+
+class ShoppingList{
+  constructor(){
+    this.items = [];
+
+  }
+
+  addItem(item){
+    if(item instanceof ShoppingListItem){
+      this.items.push(item);
+    }else{
+      throw new Error("Uh-Oh Spaghetti-Ohs! You tried to add something that shouldn't be added");
+    }
+  }
+  removeItem(item){
+    if(this.items.indexOf(item)>-1){
+      this.items.splice(item.indexOf(this.items),1);
+      console.log(`You just crossed off ${item} from your list`);
+    }
+    if(item === null && this.items[0] !== null){
+      this.items.pop();
+    }
+  }
+}
