@@ -1,15 +1,7 @@
-<<<<<<< HEAD
-console.log('shopping list item test***');
-console.log('***chai', chai)
-=======
 /*jshint esversion: 6 */
-
->>>>>>> refs/remotes/origin/master
-
 const should = chai.should();
 const expect = chai.expect;
 
-<<<<<<< HEAD
 describe('ShoppingListItem', () => {
   let myList;
   beforeEach(() => {
@@ -58,10 +50,4 @@ describe('ShoppingListItem', () => {
     expect(myList.is_done).to.equal(false)
 
   })
-=======
-describe ('ShoppingListItem', () => {
-  it('should be a class', () => {
-    ShoppingListItem.should.be.a.function;
-   });
->>>>>>> refs/remotes/origin/master
-});
+})
