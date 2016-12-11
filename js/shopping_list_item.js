@@ -3,14 +3,14 @@
 class ShoppingListItem {
   constructor(name, description) {
     this.name = name;
-    this.decription = description;
+    this.description = description;
     this.is_done = false;
   }
   check(){
-    is_done = true;
+    this.is_done = true;
   }
   uncheck(){
-    is_done = false;
+    this.is_done = false;
   }
   render(){
     return `li class="completed_${is_done}"><<span>${this.name}</span> <span>${this.description}</span></li>`;
@@ -52,7 +52,7 @@ class ShoppingList{
     }
   }
   render(){
-    
+
   }
 }
 
