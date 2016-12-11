@@ -32,13 +32,27 @@ class ShoppingList{
     }
   }
   removeItem(item){
-    if(this.items.indexOf(item)>-1){
+    if(item instanceof ShoppingListItem){
+      if(this.items.indexOf(item)>-1){
       this.items.splice(item.indexOf(this.items),1);
       console.log(`You just crossed off ${item} from your list`);
+      }else{
+        throw new Error(`Whatchu tryna do? Can't remove ${item} if you don't have ${item}. You feelin' alright hun?`);
+      }
+    }else{
+      throw new Error(`Whatchu tryna do? ${item} isn't even a real choice. Go home, you're drunk`);
     }
     if(item === null && this.items[0] !== null){
       this.items.pop();
+    }else{
+      return false;
     }
+    if(item instanceof ShoppingListItem){
+
+    }
+  }
+  render(){
+    
   }
 }
 
