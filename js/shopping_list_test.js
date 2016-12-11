@@ -2,7 +2,7 @@
 
 
 const should = chai.should();
-const expect = chai.should();
+const expect = chai.expect;
 
 describe ('ShoppingListItem', () => {
   it('should be a class', () => {

@@ -1,7 +1,19 @@
 /*jshint esversion: 6 */
 
 class ShoppingListItem {
-  constructor() {
-    
+  constructor(name, description) {
+    this.name = name;
+    this.decription = description;
+    this.is_done = false;    
   }
+  check(){
+    is_done = true;
+  }
+  uncheck(){
+    is_done = false;
+  }
+  render(){
+    return `li class="completed_${is_done}"><<span>${this.name}</span> <span>${this.description}</span></li>`;
+   }
+
 }
