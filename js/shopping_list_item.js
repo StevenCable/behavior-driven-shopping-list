@@ -4,7 +4,7 @@ class ShoppingListItem {
   constructor(name, description) {
     this.name = name;
     this.decription = description;
-    this.is_done = false;    
+    this.is_done = false;
   }
   check(){
     is_done = true;
@@ -18,6 +18,7 @@ class ShoppingListItem {
 
 }
 
+<<<<<<< HEAD
 class ShoppingList{
   constructor(){
     this.items = [];
@@ -41,3 +42,5 @@ class ShoppingList{
     }
   }
 }
+=======
+>>>>>>> 4fda373821013a614f1a7dff734dc8f80c44a067
