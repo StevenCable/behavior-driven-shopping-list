@@ -18,7 +18,6 @@ class ShoppingListItem {
 
 }
 
-<<<<<<< HEAD
 class ShoppingList{
   constructor(){
     this.items = [];
@@ -42,5 +41,4 @@ class ShoppingList{
     }
   }
 }
-=======
->>>>>>> 4fda373821013a614f1a7dff734dc8f80c44a067
+
