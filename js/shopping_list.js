@@ -1,7 +1,7 @@
 /*jshint esversion: 6 */
 
 class ShoppingList{
-  
+
   constructor(){
     this.items = [];
 
@@ -14,6 +14,7 @@ class ShoppingList{
       throw new Error("Uh-Oh Spaghetti-Ohs! You tried to add something that shouldn't be added");
     }
   }
+
   removeItem(item){
     if(item instanceof ShoppingListItem){
       if(this.items.indexOf(item)>-1){
@@ -29,6 +30,7 @@ class ShoppingList{
         this.items.pop();
       }
   }
+  
   render(){
     var htmlItem = document.createElement('ul');
     for(var i; i<this.items.length; i++){
