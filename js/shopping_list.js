@@ -29,7 +29,10 @@ class ShoppingList{
       }
   }
   render(){
-
+    var htmlItem = document.createElement('ul');
+    for(var i; i<this.items.length; i++){
+      
+    }
 
   }
 }

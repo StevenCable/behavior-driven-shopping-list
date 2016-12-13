@@ -56,4 +56,8 @@ describe('unCheck', () => {
     expect(myList.is_done).to.equal(false);
 
   });
+
+  it('should have a method named render', () => {
+
+  })
 });
