@@ -59,5 +59,5 @@ describe('unCheck', () => {
 
   it('should have a method named render', () => {
 
-  })
+  });
 });

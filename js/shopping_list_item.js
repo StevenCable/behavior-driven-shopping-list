@@ -26,6 +26,7 @@ class ShoppingListItem {
    htmlString.appendChild(spanDescription);
 
    return htmlString.outerHTML;
+   
    }
 
 }
