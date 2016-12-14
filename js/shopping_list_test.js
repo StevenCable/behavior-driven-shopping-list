@@ -85,7 +85,32 @@ describe('ShoppingList', () => {
     myList.should.have.property('items');
   });
 
+describe('addItem', () => {
   it('should have a method called addItems', () =>{
     myList.addItem.should.be.a.function
   });
+
+  it('item should be an instance of Shopping ListItem', () => {
+    myList.addItem instanceof ShoppingListItem;
+  });
+});
+
+describe('removeItem', () => {
+  it('should have a method called removeItem', () =>{
+    myList.removeItem.should.be.a.function
+  });
+
+  it('item should be an instance of ShoppingListItem', () =>{
+    myList.removeItem.prototype  instanceof ShoppingListItem
+  });
+
+  it('should have a method called render', () =>{
+    myList.render.should.be.a.function
+  });
+
+  it('render should return a string', () => {
+    myList.render().should.be.a.string
+  });
+});
+
 });
