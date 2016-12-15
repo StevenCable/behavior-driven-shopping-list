@@ -17,6 +17,10 @@ class ShoppingListItem {
    var htmlString = document.createElement('li');
    htmlString.className = `completed_${this.is_done}`;
 
+   var myCheckBox = document.createElement('input');
+   myCheckBox.type = 'checkbox';
+   htmlString.appendChild(myCheckBox);
+
    var spanName = document.createElement('span');
    spanName.innerHTML = `${this.name}`;
    htmlString.appendChild(spanName);
@@ -24,8 +28,11 @@ class ShoppingListItem {
    var spanDescription = document.createElement('span');
    spanDescription.innerHTML = `${this.description}`;
    htmlString.appendChild(spanDescription);
-
    return htmlString.outerHTML;
+//include checkbox input
+//addEvenlistener that will call function
+//function named changeCheckedStatus(idx, checkbox)
+//checkbox will be actual element
 
    }
 
@@ -65,11 +72,3 @@ class ShoppingListItem {
 //   }
 // }
 
-//Index html Connection
-let loadButton =document.getElementById('add_shopping_list_item_button');
-
-loadButton.addEventListener('click', add_to_shopping_list);
-
-function add_to_shopping_list() {
- alert('hey bitttch')
-}

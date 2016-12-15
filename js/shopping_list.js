@@ -36,7 +36,7 @@ class ShoppingList{
     for(var i=0; i<this.items.length; i++){
       let htmlRender = this.items[i].render();
       htmlItem.innerHTML += htmlRender;
-      //htmlItem.appendChild(htmlRender);
+
     }
     return htmlItem.outerHTML;
   }

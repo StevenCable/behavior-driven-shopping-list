@@ -21,3 +21,7 @@ function add_to_shopping_list() {
   //empty string innerHTML = nameArray
   //will store result of constructing new shoppng list item and passing in val an descr
 }
+
+// function changeCheckedStatus(indx) {
+//   // body...
+// }
