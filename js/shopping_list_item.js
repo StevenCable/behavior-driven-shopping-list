@@ -26,7 +26,7 @@ class ShoppingListItem {
    htmlString.appendChild(spanDescription);
 
    return htmlString.outerHTML;
-   
+
    }
 
 }
@@ -65,3 +65,11 @@ class ShoppingListItem {
 //   }
 // }
 
+//Index html Connection
+let loadButton =document.getElementById('add_shopping_list_item_button');
+
+loadButton.addEventListener('click', add_to_shopping_list);
+
+function add_to_shopping_list() {
+ alert('hey bitttch')
+}
